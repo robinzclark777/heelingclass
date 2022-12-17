@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+    .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+    .fa-paw,.fa-money {font-size:200px}
+    </style>
+  </head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-teal w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-teal" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="assignments.html" class="w3-bar-item w3-button w3-padding-large w3-white">Assignments</a>
+    <a href="studyMaterial.html" class="w3-bar-item w3-button w3-padding-large w3-white">Study</a>
+    <a href="instructors.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Your Instructors</a>
+    <a href="students.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">The Students</a>
+    <a href="highroller.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">HighRoller Goldens</a>
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Log Out</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="assignments.html" class="w3-bar-item w3-button w3-padding-large">Assignments</a>
+    <a href="studyMaterial.html" class="w3-bar-item w3-button w3-padding-large">Study</a>
+    <a href="instructors.html" class="w3-bar-item w3-button w3-padding-large">Your Instructors</a>
+    <a href="students.html" class="w3-bar-item w3-button w3-padding-large">The Students</a>
+    <a href="highroller.html" class="w3-bar-item w3-button w3-padding-large">HighRoller Goldens</a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Log Out</a>
+  </div>
+</div>
+
+<!-- Grid -->
+  <div class="w3-row-padding" id="about">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Your Instructors</span>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="resources/images/aliciaMiller.jpg" alt="Alicia" style="width:100%">
+        <div class="w3-container">
+          <h3>Alicia Miller</h3>
+          <p class="w3-opacity">Ember 2 year old Labrador</p>
+          <p>Ember is an experienced dock diver and has been taking classes at QCDTC and HDTC.</p>
+          <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="resources/images/tracey_rio.jpg" alt="Tracey" style="width:100%">
+        <div class="w3-container">
+          <h3>Tracey Bradley</h3>
+          <p class="w3-opacity">Rio Australian Shepherd</p>
+          <p>Rio has done work in rally and agility.</p>
+          <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="resources/images/missy.jpg" alt="Missy" style="width:100%">
+        <div class="w3-container">
+          <h3>Missy Rodgers</h3>
+          <p class="w3-opacity">Asst Instructor</p>
+          <p>Missy has earned 2nd place in the Rally National competition twice and is working on her 1st UD.</p>
+          <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Our job is to help our dogs become the best possible version of themselves.</h1>
+</div>
+
+
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
